@@ -17,7 +17,7 @@ public class KafkaController {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    @PostMapping("")
+    @PostMapping
     public void post(@RequestBody KafkaModel kafkaModel) {
         kafkaTemplate.send("MY_TOPIC", kafkaModel);
     }
