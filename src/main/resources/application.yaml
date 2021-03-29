@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-apache-kafka
+
+server:
+  port: 9091
+  servlet:
+    context-path: /api
